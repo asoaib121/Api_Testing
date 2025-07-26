@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <xs:element name="TravelerinformationResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="page" type="xs:string" />
+                <xs:element name="per_page" type="xs:unsignedByte" />
+                <xs:element name="totalrecord" type="xs:unsignedShort" />
+                <xs:element name="total_pages" type="xs:unsignedShort" />
+                <xs:element name="travelers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Travelerinfo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="id" type="xs:unsignedByte" />
+                                        <xs:element name="name" type="xs:string" />
+                                        <xs:element name="email" type="xs:string" />
+                                        <xs:element name="address" type="xs:string" />
+                                        <xs:element name="createdat" type="xs:dateTime" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "object",
+    "properties": {
+        "book": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Book"
+            }
+        }
+    },
+    "required": ["book"],
+    "definitions": {
+        "book": {
+            "type": "object",
+            "properties": {
+                "author": { "type": "string" },
+                "category": { "type": "string" },
+                "price": { "type": "number" },
+                "title": { "type": "string" },
+                "isbn": { "type": "string" }
+            },
+            "required": ["author", "category", "price", "title"]
+        }
+    }
+}
