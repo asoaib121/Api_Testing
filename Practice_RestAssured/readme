@@ -1,1 +1,149 @@
+# 🧪 REST Assured API Testing Framework
 
+This is a structured REST API Testing framework using **REST Assured** with **TestNG** in Java.  
+It covers a variety of real-world testing scenarios — from basic CRUD operations to JSON/XML schema validation, authentication, and more.
+
+---
+
+## 📁 Project Structure
+RestAssured/  
+├── .idea/                  # IntelliJ IDEA config files  
+├── src/  
+│   ├── main/  
+│   └── test/  
+│       └── java/  
+│           ├── day1/  
+│           │   └── HTTPRequests  
+│           ├── day2/  
+│           │   ├── DiffWaysToCreatePostRequestBody  
+│           │   ├── Pojo_PostRequest  
+│           │   └── pojo_PostRequest_data  
+│           ├── day3/  
+│           │   ├── CookiesDemo  
+│           │   ├── HeadersDemo  
+│           │   ├── LoggingDemo  
+│           │   └── PathAndQueryParameters  
+│           ├── day4/  
+│           │   ├── ParsingJsonResponse2  
+│           │   └── ParsingJSONResponseData  
+│           ├── day5/  
+│           │   ├── FileUploadandDownload  
+│           │   └── ParsingXMLResponse  
+│           ├── day6/  
+│           │   ├── JSONschemaValidation  
+│           │   ├── SerilizationDeserilization  
+│           │   ├── Student  
+│           │   └── XMLSchemaValidation  
+│           ├── day7/  
+│           │   ├── Authentications  
+│           │   └── FakerDataGenerator  
+│           └── day8/  
+│               ├── CreateUser  
+│               ├── Delete_user  
+│               ├── GetUser  
+│               ├── UpdateUser  
+│               └── testing.xml  
+├── resources/  
+│   ├── storeJsonSchema.json  
+│   └── traveler.xsd  
+├── target/  
+├── .gitignore  
+└── pom.xml  
+
+
+## 🚀 How to Run
+### ✅ Prerequisites
+
+- Java JDK 17+
+- Maven
+- IntelliJ IDEA or any Java IDE
+- Internet connection (for downloading Maven dependencies)
+
+### 🔧 Setup Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd RestAssured
+
+2. Import the project in IntelliJ IDEA
+Open IntelliJ → Open Project → select the folder.
+
+3. Build project with Maven
+(bash)
+mvn clean install
+
+4.Run the tests
+Run tests from:
+IDE using the testing.xml
+Or via terminal: (bash)
+mvn test
+
+
+📚 Features Covered
+✔️ Basic HTTP methods (GET, POST, PUT, DELETE)
+✔️ Multiple ways of creating request body (POJO, HashMap, JSON)
+✔️ Response validation (status code, headers, body)
+✔️ Logging of requests and responses
+✔️ Query & path parameters
+✔️ Parsing JSON and XML responses
+✔️ Schema validation (JSON/XSD)
+✔️ Serialization & Deserialization
+✔️ Authentication (Basic, Digest, OAuth)
+✔️ Fake data generation using JavaFaker
+✔️ User operations with reusable methods
+
+🧩 Dependencies (Managed via Maven)
+All required JARs are automatically handled via the pom.xml.
+If you want to know about each library used — Click Here to View JAR Dependency Section
+
+
+📄 License
+This project is licensed under the MIT License — a permissive open-source license.
+MIT License
+
+Copyright (c) 2025 Shoaib
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in  
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
+
+
+
+🛠️ How to Contribute
+Fork the repository
+
+Clone fork locally
+Create a new branch for feature or fix
+Make changes with proper code style and comments
+Test changes
+Commit and push fork
+Create a Pull Request (PR) describing what have done
+
+
+🔍 Contribution Rules
+Keep code clean, readable, and organized
+Follow existing naming conventions
+Include tests if adding new functionality
+Don't modify unrelated files
+Be respectful and constructive in discussions
+
+👤 Author
+Shoaib
+Computer Science and Engineer
+Green University of Bangladesh
+GitHub: github.com/asoaib121
